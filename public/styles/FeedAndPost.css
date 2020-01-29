@@ -1,0 +1,60 @@
+/* #history{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+ */
+.community-feed {
+    margin-bottom: 150px;
+}
+
+#feedContainer{
+    height: 50vh;
+    overflow: scroll;
+}
+
+.postCont{
+    display: block;
+    position: relative;
+    word-break: break-all;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.user{
+    font-weight: bold;
+    position: absolute;
+    margin-right: 20px;
+}
+
+.activity{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.date{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    
+}
+
+.message{
+    font-size: 15px;
+    text-align: left;
+}
+
+h5 {
+    margin-top: 25px;
+}
+
+#message {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+select#activity {
+    margin-left: 0 !important;
+}  

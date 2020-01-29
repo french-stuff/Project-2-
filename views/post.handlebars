@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Scroll to top</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="">Welcome, <span id="user"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="/feed">View Feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="/post">Make a Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" id="logout" href="">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead mastheadPost">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-7 welcome">
+                <div class="header-content mt-0 mx-auto animated fadeIn">
+                    <div id="recent" class="recent-feed">
+                        <h1 class="mg-1">Welcome back, <span id="welcomeUserFeed"></span>!</h1>
+                        <h3 class="mb-5">Are you ready to share a new update?<br>Use the form below to share your latest achievement!</h3>
+                        <div style="display: none;">
+                            <span id="user"></span>
+                            <button id="logout">X</button>
+                            <br>
+                            <button id="feed">Feed</button>
+                        </div>
+
+                        <button id="newPost" style="display: none;" >Create Post</button>
+                        <button id="historyPost" style="display: none;" >History</button>
+
+                        <div id="postToCreate">
+                            <h5>Activity - Choose one</h5>
+                            <select id="activity" type="text">
+                                <option value="Balance">Balance</option>
+                                <option value="Endurance">Endurance</option>
+                                <option value="Flexibility">Flexibility</option>
+                                <option value="High Intensity">High Intensity</option>
+                                <option value="Strength Training">Strength Training</option>
+                            </select>
+
+                            <h5>Message</h5>
+                            <textarea id="message"></textarea>
+                            <br>
+                            <a href="/feed" id="submit" class="btn btn-outline btn-xl js-scroll-trigger">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 my-auto community-feed">
+                <h1 class="mg-1">Your Recent Posts</h1>
+                <div id="feed" class="feed-container">
+                    <aside id="feedContainer">
+                        <div id="history">
+
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/post.js"></script>
